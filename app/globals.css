@@ -66,4 +66,13 @@
   body {
     @apply bg-background text-foreground;
   }
+  button {
+    @apply active:outline-none;
+  }
+}
+
+@layer utilities {
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
 }

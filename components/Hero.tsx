@@ -1,8 +1,10 @@
 import React from "react";
 import { TextGenerateEffect } from "./ui/TextGenerativeEffect";
 import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow, FaRegFile, FaRegFilePdf } from "react-icons/fa6";
 import { Spotlight } from "./ui/Spotlight";
+import Link from "next/link";
+import TopGradientButton from "./ui/TopGradientButton";
 
 const Hero = () => {
   return (
@@ -28,9 +30,9 @@ const Hero = () => {
          bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col ">
-          <p className=" tracking-widest  text-purple-200 text-lg max-w-80">
+          <p className=" tracking-widest  text-purple text-lg max-w-80">
             Hi, my name is
           </p>
 
@@ -40,13 +42,21 @@ const Hero = () => {
           />
 
           <p className="md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl max-w-3xl">
-            I&apos;m a front-end web developer based in Slovenia. I&apos;m
-            passionate about building modern web applications that users love.
+            I&apos;m a Junior Front-End Web Developer based in Slovenia.
+            I&apos;m passionate about building modern web applications that
+            users love.
           </p>
-
-          <a href="#about">
-            <MagicButton title="Show my work" icon={<FaLocationArrow />} />
-          </a>
+          <div className="flex gap-4">
+            <Link href="mailto:lan22.skrobar@gmail.com">
+              <MagicButton
+                title="Let's get in touch"
+                icon={<FaLocationArrow />}
+              />
+            </Link>
+            <Link href="mailto:lan22.skrobar@gmail.com">
+              <TopGradientButton title="My resume" icon={<FaRegFile />} />
+            </Link>
+          </div>
         </div>
       </div>
     </div>
