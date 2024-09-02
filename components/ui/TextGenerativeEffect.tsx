@@ -6,9 +6,13 @@ import { cn } from "@/lib/utils";
 export const TextGenerateEffect = ({
   words,
   className,
+  filter = true,
+  duration = 2,
 }: {
   words: string;
   className?: string;
+  filter?: boolean;
+  duration?: number;
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
@@ -17,9 +21,10 @@ export const TextGenerateEffect = ({
       "span",
       {
         opacity: 1,
+        filter: filter ? "blur(0px)" : "none",
       },
       {
-        duration: 2,
+        duration: duration ? duration : 1,
         delay: stagger(0.2),
       }
     );
