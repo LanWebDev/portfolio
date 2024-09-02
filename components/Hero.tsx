@@ -1,7 +1,7 @@
 import React from "react";
 import { TextGenerateEffect } from "./ui/TextGenerativeEffect";
 import MagicButton from "./ui/MagicButton";
-import { FaLocationArrow, FaRegFile, FaRegFilePdf } from "react-icons/fa6";
+import { FaLocationArrow, FaRegFile } from "react-icons/fa6";
 import { Spotlight } from "./ui/Spotlight";
 import Link from "next/link";
 import TopGradientButton from "./ui/TopGradientButton";
@@ -53,7 +53,11 @@ const Hero = () => {
                 icon={<FaLocationArrow />}
               />
             </Link>
-            <Link href="#">
+            <Link
+              href="/lan-skrobar-resume.pdf"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               <TopGradientButton title="My resume" icon={<FaRegFile />} />
             </Link>
           </div>

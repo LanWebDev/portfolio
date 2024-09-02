@@ -13,7 +13,8 @@ export const navbarItems = [
   },
   {
     name: "Resume",
-    link: "#",
+    link: "/lan-skrobar-resume.pdf",
+    
   },
 ];
 
