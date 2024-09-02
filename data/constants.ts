@@ -40,10 +40,10 @@ export const gridItems = [
     id: 5,
     title: "Tech enthusiast with a passion for development.",
     description: "",
-    imgClassName: "absolute right-0  bottom-0 ",
+    imgClassName: "absolute right-0 opacity-80  bottom-0 ",
     img: "/b5.svg",
     spareImg: "/grid.svg",
-    titleClassName: "md:justify-center",
+    titleClassName: "justify-center",
   },
   {
     id: 6,
@@ -53,6 +53,27 @@ export const gridItems = [
     img: "",
     spareImg: "",
     titleClassName: "text-center justify-center",
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Influence Infinity - SMMA Website",
+    description:
+      "A Social Media Marketing Agency website with an appealing design and smooth animations.",
+    img: "/p1.PNG",
+    iconLists: ["/next.svg", "/tail.svg", "/typescript.svg", "/fm.svg"],
+    link: "https://influence-infinity.vercel.app",
+  },
+  {
+    id: 2,
+    title: "ReadWell - An Online Book Store",
+    description:
+      "An online book store using Google Books API. Find your favorite book, checkout, and view your order!",
+    img: "/p2.PNG",
+    iconLists: ["/next.svg", "/tail.svg", "/typescript.svg", "/prisma.svg"],
+    link: "https://read-well.vercel.app",
   },
 ];
 
