@@ -100,26 +100,69 @@ export const tech = [
   {
     id: 1,
     title: "HTML",
-    img: "",
+    img: "/html.svg",
+    link: "https://www.w3schools.com/html/",
   },
   {
-    id: 1,
-    title: "HTML",
-    img: "",
+    id: 2,
+    title: "CSS",
+    img: "/css.svg",
+    link: "https://www.w3schools.com/css/",
   },
   {
-    id: 1,
-    title: "HTML",
-    img: "",
+    id: 3,
+    title: "JavaScript",
+    img: "/javascript.svg",
+    link: "https://www.javascript.com/",
   },
   {
-    id: 1,
-    title: "HTML",
-    img: "",
+    id: 4,
+    title: "ReactJS",
+    img: "/react.svg",
+    link: "https://react.dev/",
   },
   {
+    id: 5,
+    title: "NextJS",
+    img: "/next.svg",
+    link: "https://nextjs.org/",
+  },
+
+  {
+    id: 6,
+    title: "TypeScript",
+    img: "/typescript.svg",
+    link: "https://www.typescriptlang.org/",
+  },
+  {
+    id: 7,
+    title: "TailWindCSS",
+    img: "/tail.svg",
+    link: "https://tailwindcss.com/",
+  },
+  {
+    id: 8,
+    title: "Prisma",
+    img: "/prisma.svg",
+    link: "https://www.prisma.io/",
+  },
+];
+
+export const socials = [
+  {
     id: 1,
-    title: "HTML",
-    img: "",
+    img: "/github.svg",
+  },
+  {
+    id: 2,
+    img: "/twitter.svg",
+  },
+  {
+    id: 3,
+    img: "/ig.svg",
+  },
+  {
+    id: 4,
+    img: "/linkedin.svg",
   },
 ];

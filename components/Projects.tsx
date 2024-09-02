@@ -1,10 +1,11 @@
-import { projects } from "@/data/constants";
+import { projects, tech } from "@/data/constants";
 import React from "react";
 
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import { FaLocationArrow } from "react-icons/fa6";
-import { transform } from "next/dist/build/swc";
+
+import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
 
 const Projects = () => {
   const PinContainer = dynamic(
@@ -82,6 +83,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
+      <InfiniteMovingCards items={tech} />
     </section>
   );
 };
