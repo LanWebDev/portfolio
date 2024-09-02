@@ -152,17 +152,21 @@ export const socials = [
   {
     id: 1,
     img: "/github.svg",
+    link: "https://github.com/LanWebDev",
   },
   {
     id: 2,
     img: "/twitter.svg",
+    link: "https://x.com/realLanboysi",
   },
   {
     id: 3,
     img: "/ig.svg",
+    link: "https://www.instagram.com/lanskrobar",
   },
   {
     id: 4,
     img: "/linkedin.svg",
+    link: "https://www.linkedin.com/in/lan-%C5%A1krobar-66aaa7325/",
   },
 ];

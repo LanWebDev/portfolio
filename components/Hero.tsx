@@ -53,7 +53,7 @@ const Hero = () => {
                 icon={<FaLocationArrow />}
               />
             </Link>
-            <Link href="mailto:lan22.skrobar@gmail.com">
+            <Link href="#">
               <TopGradientButton title="My resume" icon={<FaRegFile />} />
             </Link>
           </div>
