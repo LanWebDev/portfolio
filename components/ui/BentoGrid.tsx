@@ -55,6 +55,7 @@ export const BentoGridItem = ({
   const rightLists = ["JavaScript", "TailwindCSS", "Prisma"];
 
   const [copied, setCopied] = useState(false);
+  const [globe, setGlobe] = useState<any>("");
 
   const defaultOptions = {
     loop: copied,
@@ -70,6 +71,12 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
+
+  useEffect(() => {
+    requestIdleCallback(() => {
+      setGlobe(<GridGlobe />);
+    });
+  }, []);
 
   return (
     <div
@@ -128,7 +135,7 @@ export const BentoGridItem = ({
             {description}
           </div>
 
-          {id === 6 && <GridGlobe />}
+          {id === 6 && globe}
           {id === 4 && (
             <div className="flex gap-2 lg:gap-5 w-fit absolute -right-2 md:-right-1 top-0 sm:top-8">
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
