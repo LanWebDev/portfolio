@@ -48,7 +48,7 @@ const Hero = () => {
             users love.
           </p>
           <div className="flex gap-4">
-            <Link href="mailto:lan22.skrobar@gmail.com">
+            <Link href="mailto:skrobar.lan@gmail.com">
               <MagicButton
                 title="Let's get in touch"
                 icon={<FaLocationArrow />}
