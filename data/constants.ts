@@ -18,7 +18,6 @@ export const navbarItems = [
     id: 4,
     name: "Resume",
     link: "/lan-skrobar-resume.pdf",
-    
   },
 ];
 
@@ -86,7 +85,7 @@ export const projects = [
     title: "Influence Infinity - SMMA Website",
     description:
       "A Social Media Marketing Agency website with an appealing design and smooth animations.",
-    img: "/p1.PNG",
+    img: "/p1.webp",
     iconLists: ["/next.svg", "/tail.svg", "/typescript.svg", "/fm.svg"],
     link: "https://influence-infinity.vercel.app",
   },
@@ -95,7 +94,7 @@ export const projects = [
     title: "ReadWell - An Online Book Store",
     description:
       "An online book store using Google Books API. Find your favorite book, checkout, and view your order!",
-    img: "/p2.PNG",
+    img: "/p2.webp",
     iconLists: ["/next.svg", "/tail.svg", "/typescript.svg", "/prisma.svg"],
     link: "https://read-well.vercel.app",
   },
