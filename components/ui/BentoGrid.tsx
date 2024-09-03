@@ -76,7 +76,7 @@ export const BentoGridItem = ({
     requestIdleCallback(() => {
       const timer = setTimeout(() => {
         setGlobe(<GridGlobe />);
-      }, 1750); // Delay by 3 seconds
+      }, 2200); // Delay by 3 seconds
       return () => clearTimeout(timer);
     });
   }, []);
