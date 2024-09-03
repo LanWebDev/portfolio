@@ -54,11 +54,11 @@ export const BentoGridItem = ({
   const leftLists = ["ReactJS", "NextJS", "Typescript"];
   const rightLists = ["JavaScript", "TailwindCSS", "Prisma"];
 
-  const [copied, setCopied] = useState(false);
   const [globe, setGlobe] = useState<any>("");
+  const [copied, setCopied] = useState(false);
 
   const defaultOptions = {
-    loop: copied,
+    loop: false,
     autoplay: copied,
     animationData: animationData,
     rendererSettings: {
@@ -174,7 +174,9 @@ export const BentoGridItem = ({
                   copied ? "block" : "block"
                 }`}
               >
-                <Lottie options={defaultOptions} height={200} width={400} />
+                {copied && (
+                  <Lottie options={defaultOptions} height={200} width={400} />
+                )}
               </div>
 
               <MagicButton
