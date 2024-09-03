@@ -72,12 +72,10 @@ export const BentoGridItem = ({
   };
 
   useEffect(() => {
-    requestIdleCallback(() => {
-      const timer = setTimeout(() => {
-        setGlobe(<GridGlobe />);
-      }, 2200);
-      return () => clearTimeout(timer);
-    });
+    const timer = setTimeout(() => {
+      setGlobe(<GridGlobe />);
+    }, 2200);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
