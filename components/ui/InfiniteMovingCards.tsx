@@ -95,20 +95,13 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-full "
               ></div>
               <div>
-                <Link
-                  href={item.link}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className=""
-                >
-                  <Image
-                    src={item.img}
-                    alt="icon"
-                    height={100}
-                    width={100}
-                    className="opacity-70 w-[70px] h-[70px] "
-                  />
-                </Link>
+                <Image
+                  src={item.img}
+                  alt="icon"
+                  height={100}
+                  width={100}
+                  className="opacity-70 w-[70px] h-[70px] "
+                />
               </div>
             </blockquote>
           </li>
