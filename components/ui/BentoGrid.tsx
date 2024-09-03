@@ -1,16 +1,17 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
+import React, { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import { BackgroundGradientAnimation } from "./BgGradientAnimation";
 import Image from "next/image";
 import Lottie from "react-lottie";
 
-import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 
 import { Meteors } from "./Meteors";
+
+const GridGlobe = React.lazy(() => import("./GridGlobe"));
 
 export const BentoGrid = ({
   className,
@@ -127,8 +128,7 @@ export const BentoGridItem = ({
             {description}
           </div>
 
-          {/* {id === 2 && <GridGlobe />} */}
-
+          {id === 2 && <GridGlobe />}
           {id === 4 && (
             <div className="flex gap-2 lg:gap-5 w-fit absolute -right-2 md:-right-1 top-0 sm:top-8">
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
