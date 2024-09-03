@@ -55,7 +55,6 @@ export const BentoGridItem = ({
   const rightLists = ["JavaScript", "TailwindCSS", "Prisma"];
 
   const [copied, setCopied] = useState(false);
-  const [globe, setGlobe] = useState<any>("");
 
   const defaultOptions = {
     loop: copied,
@@ -71,12 +70,6 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
-
-  useEffect(() => {
-    requestIdleCallback(() => {
-      setGlobe(<GridGlobe />);
-    });
-  }, []);
 
   return (
     <div
@@ -117,7 +110,7 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-        {id === 6 && (
+        {id === 3 && (
           <BackgroundGradientAnimation>
             <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
           </BackgroundGradientAnimation>
@@ -135,7 +128,7 @@ export const BentoGridItem = ({
             {description}
           </div>
 
-          {id === 2 && globe}
+          {id === 6 && <GridGlobe />}
           {id === 4 && (
             <div className="flex gap-2 lg:gap-5 w-fit absolute -right-2 md:-right-1 top-0 sm:top-8">
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
@@ -165,9 +158,9 @@ export const BentoGridItem = ({
             </div>
           )}
 
-          {id === 3 && <Meteors number={20} />}
+          {id === 2 && <Meteors number={20} />}
 
-          {id === 6 && (
+          {id === 3 && (
             <div className="mt-5 relative items-center justify-center flex">
               <div
                 className={`absolute -bottom-5 -right-10 ${

@@ -33,15 +33,6 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
-    imgClassName: "",
-    img: "",
-    spareImg: "",
-    titleClassName: "text-center items-center",
-  },
-  {
-    id: 3,
     title: "Code with purpose",
     description:
       " I believe in coding with a purpose. Every line of code should solve a problem, enhance user experience, or drive innovation. This principle guides every project I take on, ensuring my work is not just functional but impactful.",
@@ -50,6 +41,17 @@ export const gridItems = [
     spareImg: "",
     titleClassName: "gap-4 justify-center",
   },
+
+  {
+    id: 3,
+    title: "Do you want to start a project together?",
+    description: "",
+    imgClassName: "",
+    img: "",
+    spareImg: "",
+    titleClassName: "text-center justify-center",
+  },
+
   {
     id: 4,
     title: "My tech stack",
@@ -70,12 +72,12 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "I'm very flexible with time zone communications",
     description: "",
     imgClassName: "",
     img: "",
     spareImg: "",
-    titleClassName: "text-center justify-center",
+    titleClassName: "text-center items-center",
   },
 ];
 
