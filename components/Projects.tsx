@@ -15,7 +15,7 @@ const Projects = () => {
   );
 
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="pt-10 md:mb-10">
       <h1 className="font-bold text-4xl md:text-5xl text-center">
         A small selection of my{" "}
         <span className="text-purple">recent projects</span>
@@ -27,7 +27,7 @@ const Projects = () => {
             className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw] "
           >
             <PinContainer title={project.link} href={project.link}>
-              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden h-[30vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden md:h-[22rem] h-[15rem] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                   <Image
                     src={"/bg.png"}
@@ -83,7 +83,9 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <InfiniteMovingCards items={tech} />
+      <div className="py-4">
+        <InfiniteMovingCards items={tech} />
+      </div>
     </section>
   );
 };

@@ -6,7 +6,6 @@ import { FaLocationArrow, FaRegFile } from "react-icons/fa6";
 import { Spotlight } from "./ui/Spotlight";
 import Link from "next/link";
 import TopGradientButton from "./ui/TopGradientButton";
-import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -42,16 +41,6 @@ const Hero = () => {
             words="Lan Škrobar. I build things for the web."
             className="  text-[40px] md:text-5xl lg:text-6xl"
           />
-          {/* <motion.div
-            initial={{ opacity: 0, y: "30%" }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.5 }}
-            className="  text-[40px] md:text-5xl lg:text-6xl my-4 font-bold leading-snug tracking-wide flex flex-col gap-4"
-          >
-            <p className="text-purple-100">Lan Škrobar.</p>
-            <p className="text-purple-100/70">I build things for the web.</p>
-          </motion.div> */}
 
           <p className="md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl max-w-3xl">
             I&apos;m a Junior Front-End Web Developer based in Slovenia.
