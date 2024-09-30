@@ -43,9 +43,12 @@ const Hero = () => {
           />
 
           <p className="md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl max-w-3xl">
-            I&apos;m a Junior Front-End Web Developer based in Slovenia.
-            I&apos;m passionate about building modern web applications that
-            users love.
+            I&apos;m a{" "}
+            <span className=" font-bold">
+              Remote Junior Front-End Web Developer
+            </span>{" "}
+            based in Slovenia. I&apos;m passionate about building modern web
+            applications that users love.
           </p>
           <div className="flex gap-4">
             <Link href="mailto:skrobar.lan@gmail.com">
