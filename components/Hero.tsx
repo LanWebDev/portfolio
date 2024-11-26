@@ -58,7 +58,7 @@ const Hero = () => {
               />
             </Link>
             <Link
-              href="/lan-skrobar-resume.pdf"
+              href="/Lan_Skrobar_Resume.pdf"
               rel="noopener noreferrer"
               target="_blank"
             >

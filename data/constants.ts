@@ -17,7 +17,7 @@ export const navbarItems = [
   {
     id: 4,
     name: "Resume",
-    link: "/lan-skrobar-resume.pdf",
+    link: "/Lan_Skrobar_Resume.pdf",
   },
 ];
 
